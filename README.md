@@ -56,13 +56,13 @@ The text data is preprocessed using the following steps:
 
 ## Dealing with categorical data (Nominal Data).
 1. Preprocess `Puplication` by apply one-hot encoding.
-2. Preprocess `author` by splitting authors in list and apply mapping on them.
+2. Preprocess `author` by splitting authors in a list and applying mapping on them.
 
 ## Feature Extraction
 `TF-IDF vectorization`: The preprocessed text is converted into a matrix of TF-IDF feature vectors using the sklearn library.
 
 ## Clustering
-The TF-IDF feature vectors are clustered usingthree different clustering algorithms:
+The TF-IDF feature vectors are clustered using three different clustering algorithms:
 | Algorithm   | Details |
 | ----------- | ----------- |
 | K-means | K-means is a centroid-based clustering algorithm that partitions the data into K clusters based on the Euclidean distance between the data points and the cluster centroids. |
@@ -74,30 +74,34 @@ The resulting clusters are then analyzed to identify the most common topics in t
 
 ## Results
 The results of the topic modeling analysis are presented in a set of visualizations, including:
-- A scatter plot of the DBSCAN Culsters.
-- A scatter plot of the Hierarchical Clustering Culsters.
+- A scatter plot of the DBSCAN Clusters.
+- A scatter plot of the Hierarchical Clustering Clusters.
 
 ## Usage
 To run the project, 
-- you will need to install the required Python libraries listed in the `requirements.txt` file.
+- You will need to install the required Python libraries listed in the `requirements.txt` file.
 - Run this code to install _stopwords_ and _wordnet_
     ```
     nltk.download(‘stopwords’)
     nltk.download(‘wordnet’)
     ```
-- you will also need to provide download CSV file from [here](https://files.fm/u/9yxgtuwh4).
+- You will also need to provide a download CSV file from [here](https://files.fm/u/9yxgtuwh4).
 
 ## Visualization
-- Word cloud for title column 
+- Word cloud for title column
+
 ![title](https://github.com/NourAyman10/NLP-Topic-Modeling-Classification/assets/83882344/17b62f16-d90f-4235-a52b-ef3ff5c87817)
 
 - Word cloud for content column
+  
 ![content](https://github.com/NourAyman10/NLP-Topic-Modeling-Classification/assets/83882344/5f405fc7-c878-4532-a391-32e1fc8dd916)
 
 - DBSCAN Clustering
+
 ![DBSCAN](https://github.com/NourAyman10/NLP-Topic-Modeling-Classification/assets/83882344/695b4376-3552-45a2-bdb4-fe6b7fd280b3)
 
 - Hierarchical Clustering
+  
 ![HierarchicalClustering](https://github.com/NourAyman10/NLP-Topic-Modeling-Classification/assets/83882344/27439b99-fabf-4e77-8a03-c0e994ee1906)
 
 ## Credits
